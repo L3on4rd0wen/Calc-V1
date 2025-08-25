@@ -1,7 +1,7 @@
 # Calculators
 by L3on4rd0wen
 
-A concise, one-sentence description of the project. Tell me what it is and why it exists.
+This ReadMe file contains the description for all files related to calculator projects.
 
 ## 📜 Table of Contents
 
@@ -44,7 +44,7 @@ This repository contains multiple versions of a calculator project. This project
 
 ### ⚙️ Installation
 
-Provide clear, step-by-step instructions on how to get your project up and running locally.
+Step-by-step instructions on how to get the project up and running locally.
 
 1.  **Clone the repository:**
     ```bash
