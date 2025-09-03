@@ -1,0 +1,94 @@
+body {
+    background-color: #a0a0a0;
+}
+
+.container {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    line-height: normal;
+    margin: 0 auto;
+    padding: 20px;
+    border: 3px solid #727272;
+    border-radius: 5px;
+    background-color: #727272;
+}
+
+#temp-calc{
+    display: none;
+}
+
+.display {
+    width: 90%;
+    margin: 0 auto;
+    font-size: 20px;
+    text-align: right;
+    padding: 20px;
+    border: 3px solid #303030;
+    background-color: #727272;
+    color: #303030;
+    border-radius: 5px;
+}
+
+.div-buttons {
+    margin: 0 auto;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.button {
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    color: #727272;
+    text-align: center;
+    line-height: 1.5;
+    margin: 3px;
+    border: 3px solid #303030;
+    background-color: #303030;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: normal;
+}
+
+.hideable-button {
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    color: #727272;
+    text-align: center;
+    line-height: 1.5;
+    margin: 3px;
+    border: 3px solid #303030;
+    background-color: #303030;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: normal;
+}
+
+.hidden {
+    display: none;
+}
+
+.On {
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    color: #afafaf;
+    text-align: center;
+    line-height: 1.5;
+    margin: 3px;
+    border: 3px solid #303030;
+    background-color: #303030;
+    border-radius: 5px;
+    cursor: pointer;
+}

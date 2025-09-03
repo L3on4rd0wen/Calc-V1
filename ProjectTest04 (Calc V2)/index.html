@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="css\style.css">
+</head>
+<body>
+    <div class="container" id="main-calc">
+
+        <input type="text" class="display" id="main-display" value="0" disabled>
+
+        <div class="div-buttons">
+            <button type="button" class="hideable-button hidden" id="radDeg" onclick="degRadCyle()">rad</button>
+            <button type="button" class="button" id="expandButton" onclick="visibility(0)">[+]</button>
+            <button type="button" class="button" onclick="reset()">C</button>
+            <button type="button" class="button" onclick="backspace()">⇤</button>
+            <button type="button" class="button" onclick="insertOperator('%')">%</button>
+            <button type="button" class="button" onclick="insertOperator('!')">!</button>
+            <button type="button" class="hideable-button hidden" id="InverseB" onclick="InVerse()">Inv</button>
+        </div>
+        
+        <div class="div-buttons">
+            <button type="button" class="hideable-button hidden" id="sin" onclick="insertOperator('sin')">sin</button>
+            <button type="button" class="button" onclick="insertNumber('7')">7</button> 
+            <button type="button" class="button" onclick="insertNumber('8')">8</button>
+            <button type="button" class="button" onclick="insertNumber('9')">9</button>
+            <button type="button" class="button" onclick="insertOperator('÷')">÷</button>
+            <button type="button" class="button" onclick="insertOperator('openP')">(</button>
+            <button type="button" class="hideable-button hidden" id="pi" onclick="insertNumber('π')">π</button>
+        </div>
+
+        <div class="div-buttons">
+            <button type="button" class="hideable-button hidden" id="cos" onclick="insertOperator('cos')">cos</button>
+            <button type="button" class="button" onclick="insertNumber('4')">4</button>
+            <button type="button" class="button" onclick="insertNumber('5')">5</button>
+            <button type="button" class="button" onclick="insertNumber('6')">6</button>
+            <button type="button" class="button" onclick="insertOperator('×')">×</button>
+            <button type="button" class="button" onclick="insertOperator('closeP')">)</button>
+            <button type="button" class="hideable-button hidden" id="e" onclick="insertNumber('e')">e</button>
+        </div>
+
+        <div class="div-buttons">
+            <button type="button" class="hideable-button hidden" id="tan" onclick="insertOperator('tan')">tan</button>
+            <button type="button" class="button" onclick="insertNumber('1')">1</button>
+            <button type="button" class="button" onclick="insertNumber('2')">2</button>
+            <button type="button" class="button" onclick="insertNumber('3')">3</button>
+            <button type="button" class="button" onclick="insertOperator('-')">-</button>
+            <button type="button" class="button" id="power" onclick="insertOperator('^')">xʸ</button>
+            <button type="button" class="hideable-button hidden" id="log" onclick="insertOperator('log')">log</button>
+        </div>
+
+        <div class="div-buttons">
+            <button type="button" class="hideable-button hidden" id="ans" onclick="insertNumber('Ans')">Ans</button>
+            <button type="button" class="button" onclick="insertDecimal()">.</button>
+            <button type="button" class="button" onclick="insertNumber('0')">0</button>
+            <button type="button" class="button" id="evaluate" onclick="calculate()">=</button>
+            <button type="button" class="button" onclick="insertOperator('+')">+</button>
+            <button type="button" class="button" id="sqrtroot" onclick="insertOperator('√')">√</button>
+            <button type="button" class="hideable-button hidden" onclick="RickRoll()">...</button>
+        </div>
+
+    </div>
+    <div class="container" id="temp-calc">
+        
+        <input type="text" class="display" id="input-display" value="0" disabled>
+        <input type="text" class="display" id="result-display" value="0" disabled>
+
+        <div class="div-buttons">
+            <button type="button" class="button" onclick="">°C</button>
+            <button type="button" class="button" onclick="">⇄</button>
+            <button type="button" class="button" onclick="">°F</button>
+        </div>
+    </div>
+    <script src="js\script.js"></script>
+</body>
+</html>

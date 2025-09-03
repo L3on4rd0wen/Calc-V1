@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculator</title>
+    <link rel="stylesheet" href="styles\styles.css">
+</head>
+<body>
+    <div id="calculator">
+        <div>
+            <input type="text" id="display" disabled>
+        </div>
+        <div>
+            <button class="hiddenButton" onclick="insertNumber('3.14159265')">π</button>
+            <button class="button" onclick="clearDisplay()">C</button>
+            <button class="button" onclick="backspace()">←</button>
+            <button class="button" id="resize" onclick="resizeCalc()">[+]</button>
+            <button class="button" onclick="insertOperator('/')">÷</button>
+            <button class="hiddenButton" onclick="insertRoot(2)">√x</button>
+        </div>
+        <div>
+            <button class="hiddenButton" onclick="insertNumber('2.71828183')">e</button>
+            <button class="button" onclick="insertNumber('7')">7</button>
+            <button class="button" onclick="insertNumber('8')">8</button>
+            <button class="button" onclick="insertNumber('9')">9</button>
+            <button class="button" onclick="insertOperator('*')">x</button>
+            <button class="hiddenButton" onclick="insertOperator('^')">x<sup>y</sup></button>
+        </div>
+        <div>
+            <button class="hiddenButton" onclick="insertOperator('^(-1)')">1/x</button>
+            <button class="button" onclick="insertNumber('4')">4</button>
+            <button class="button" onclick="insertNumber('5')">5</button>
+            <button class="button" onclick="insertNumber('6')">6</button>
+            <button class="button" onclick="insertOperator('-')">-</button>
+            <button class="hiddenButton" onclick="insertRoot(3)">∛x</button>
+        </div>
+        <div>
+            <button class="hiddenButton" onclick="insertParentheses(1)">(</button>
+            <button class="button" onclick="insertNumber('1')">1</button>
+            <button class="button" onclick="insertNumber('2')">2</button>
+            <button class="button" onclick="insertNumber('3')">3</button>
+            <button class="button" onclick="insertOperator('+')">+</button>
+            <button class="hiddenButton" onclick="insertFactorial()">!</button>
+        </div>
+        <div>
+            <button class="hiddenButton" onclick="insertParentheses(2)">)</button>
+            <button class="button" onclick="insertDecimal('.')">.</button>
+            <button class="button" onclick="insertNumber('0')">0</button>
+            <button class="button" onclick="insertPercentage()">%</button>
+            <button class="button" onclick="calculate()">=</button>
+            <button class="hiddenButton" onclick="insertLog()">lg</button>
+        </div>
+    </div>
+    <script src="scripts\script.js"></script>
+</body>
+</html>
